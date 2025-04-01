@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayant's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #1e1e2f;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 1.8rem;
+        }
+
+        .navbar ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ff8c00;
+        }
+
+        /* Home Section */
+        .home {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center/cover;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .home h2 {
+            font-size: 3rem;
+        }
+
+        .home span {
+            color: #ff8c00;
+        }
+
+        .home p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            background-color: #ff8c00;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e67600;
+        }
+
+        /* Sections */
+        section {
+            padding: 5% 10%;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Projects Section */
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Skills Section */
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            text-align: left;
+        }
+
+        .skills li {
+            font-size: 1.2rem;
+            background-color: #f5f5f5;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Certificate Section */
+        .certificate-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .certificate {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .certificate:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Contact Section */
+        .contact a {
+            text-decoration: none;
+            color: #ff8c00;
+            font-size: 1.1rem;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e1e2f;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar ul {
+                margin-top: 1rem;
+            }
+
+            .home h2 {
+                font-size: 2.5rem;
+            }
+
+            .btn {
+                padding: 0.7rem 1.2rem;
+            }
+
+            .project-container {
+                grid-template-columns: 1fr;
+            }
+
+            .skills ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Jayant's Portfolio</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="intro">
+            <h2>Hello, I'm <span>Jayant</span></h2>
+            <p>A passionate Computer Science student exploring AI, Blockchain, and Databases.</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects & Achievements</h2>
+        <div class="project-container">
+            <div class="project">
+                <h3>Vehicle Safety Device</h3>
+                <p>Developed using Python, Java, and Arduino to detect fire, smoke, and motion.</p>
+            </div>
+            <div class="project">
+                <h3>Smart Contract Security</h3>
+                <p>Demonstrated re-entrancy attacks and smart contract vulnerabilities using Solidity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills & Technologies</h2>
+        <ul>
+            <li><i class="fas fa-code"></i> Java, Python, C, C++</li>
+            <li><i class="fas fa-database"></i> MySQL, MongoDB</li>
+            <li><i class="fas fa-laptop-code"></i> HTML, CSS, JavaScript</li>
+            <li><i class="fas fa-shield-alt"></i> Solidity, Hyperledger</li>
+        </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <h2>Certifications & Courses</h2>
+        <div class="certificates">
+            <h3>IBM SkillsBuild Certification in full stack web development</h3>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:jayantbatra01234@gmail.com">jayantbatra01234@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/jayant-batra">linkedin.com/in/jayant-batra</a></p>
+        <p>GitHub: <a href="https://github.com/jayantbatra808">github.com/jayantbatra808</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jayant | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
